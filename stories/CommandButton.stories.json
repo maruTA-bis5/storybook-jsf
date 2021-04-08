@@ -1,0 +1,54 @@
+{
+  "title": "PrimeFaces/CommandButton",
+  "stories": [
+  {
+    "name": "Basic",
+    "parameters": {
+      "server": { "id": "primefaces/commandButton/basic.xhtml" }
+    },
+    "args": {
+      "buttonText": "Hello",
+      "icon": "",
+      "color": "primary"
+    },
+    "argTypes": {
+      "buttonText": {
+        "description": "desc"
+      },
+      "icon": {
+      },
+      "color": {
+        "control": {
+          "type": "radio",
+          "options": [ "primary", "secondary", "success", "info", "warning", "help", "danger" ]
+        }
+      }
+    }
+  },
+  {
+    "name": "Rounded Buttons",
+    "parameters": {
+      "server": { "id": "primefaces/commandButton/rounded.xhtml" }
+    },
+    "args": {
+      "buttonText": "Hello",
+      "icon": "",
+      "color": "primary"
+    },
+    "argTypes": {
+      "buttonText": {
+        "description": "desc"
+      },
+      "icon": {
+      },
+      "color": {
+        "control": {
+          "type": "radio",
+          "options": [ "primary", "secondary", "success", "info", "warning", "help", "danger" ]
+        }
+      }
+    }
+  }
+  ]
+}
+

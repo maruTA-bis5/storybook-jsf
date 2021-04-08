@@ -1,0 +1,19 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:p="http://primefaces.org/ui"
+		xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+		xmlns:f="http://xmlns.jcp.org/jsf/core"
+		template="/template.xhtml">
+
+<f:metadata>
+	<f:viewParam name="buttonText" value="#{commandButtonView.buttonText}" />
+	<f:viewParam name="color" value="#{commandButtonView.color}" />
+	<f:viewParam name="icon" value="#{commandButtonView.icon}" />
+</f:metadata>
+
+<ui:define name="content">
+
+	<p:commandButton icon="#{commandButtonView.icon}" value="#{commandButtonView.buttonText}" styleClass="rounded-button ui-button-#{commandButtonView.color}" />
+
+</ui:define>
+
+</ui:composition>
